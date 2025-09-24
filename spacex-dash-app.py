@@ -12,6 +12,15 @@ spacex_df = pd.read_csv("spacex_launch_dash.csv")
 max_payload = spacex_df['Payload Mass (kg)'].max()
 min_payload = spacex_df['Payload Mass (kg)'].min()
 
+color_discrete_map = {
+    'v1.0': '#636EFA',
+    'v1.1': '#EF553B',
+    'FT': '#00CC96',
+    'B4': '#AB63FA',
+    'B5': '#FFA15A'
+}
+
+
 # Create a dash application
 app = dash.Dash(__name__)
 
@@ -97,6 +106,8 @@ def get_scatter_chart(entered_site, payload_range):
     filtered_df["Outcome"] = filtered_df["class"].replace({1: "Success", 0: "Failure"})    
     if entered_site == 'ALL':
         fig = px.scatter(filtered_df, x='Payload Mass (kg)', y = 'Outcome', color='Booster Version Category',
+                category_orders={"Outcome": ["Success", "Failure"]},
+                color_discrete_map=color_discrete_map,
                 title='Correlation Between Payload and Success for All Sites ')
         return fig
     else:
@@ -105,6 +116,8 @@ def get_scatter_chart(entered_site, payload_range):
                       (spacex_df['Payload Mass (kg)']<= payload_range[1])]
         filtered_df["Outcome"] = filtered_df["class"].replace({1: "Success", 0: "Failure"})
         fig = px.scatter(filtered_df, x='Payload Mass (kg)', y = 'Outcome', color='Booster Version Category',
+                category_orders={"Outcome": ["Success", "Failure"]},
+                color_discrete_map=color_discrete_map,
                 title= f'Correlation Between Payload and Success for {entered_site}')
         return fig
 # Run the app
