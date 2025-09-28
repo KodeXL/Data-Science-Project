@@ -56,6 +56,26 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 
 ---
 
+## 📸 Sample Visuals
+- (Insert images from your /images/ folder here, e.g. success rates by booster version, ROC curve of best model, dashboard screenshot.)
+
+---
+
+## 🙌 Acknowledgements
+- Cousera
+- SpaceX Launch Data
+- IBM Data Science Capstone Project (inspiration for dataset structure)
+- Open-source Python community
+
+---
+
+## 👤 Author
+- Olamide Olayinka
+- 💼 LinkedIn
+- 🐙 GitHub
+
+---
+
 ## 📂 Project Structure
 ```bash
 ├── data/                 # Raw and processed datasets
@@ -77,21 +97,3 @@ Interactive dashboards enhance data storytelling.
 Model evaluation beyond accuracy (ROC-AUC, F1-score) is critical for imbalanced datasets.
 Domain knowledge (rocket design, booster versions) matters when interpreting ML results.
 
-📌 Future Work
-Expand dataset with Falcon Heavy and Starship launches.
-Test advanced models (Random Forest, XGBoost, Neural Networks).
-Deploy dashboard as a web app with live updates from SpaceX API.
-
-📸 Sample Visuals
-(Insert images from your /images/ folder here, e.g. success rates by booster version, ROC curve of best model, dashboard screenshot.)
-
-🙌 Acknowledgements
-Cousera
-SpaceX Launch Data
-IBM Data Science Capstone Project (inspiration for dataset structure)
-Open-source Python community
-
-👤 Author
-Olamide Olayinka
-💼 LinkedIn
-🐙 GitHub
