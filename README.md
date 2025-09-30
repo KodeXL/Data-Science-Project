@@ -71,8 +71,8 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 
 ## 👤 Author
 - Olamide Olayinka
-- 💼 LinkedIn
-- 🐙 GitHub
+- 💼 [LinkedIn](https://www.linkedin.com/in/olamide-olayinka-a8222518/)
+
 
 ---
 
