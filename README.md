@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview  
 This project analyzes SpaceX Falcon 9 launch data to predict the success of first-stage booster landings.  
-The goal was to apply **data science and machine learning techniques** to explore how factors such as payload mass, launch site, and booster version influence landing outcomes — a critical factor in reducing launch costs through rocket reusability.  
+The goal was to apply **data science and machine learning techniques** to explore how factors such as payload mass, launch site, and booster version influence landing outcomes, a critical factor in reducing launch costs through rocket reusability.  
 
 By leveraging **Python, SQL, and machine learning models**, this project demonstrates end-to-end data analytics: from exploratory data analysis and interactive dashboards to predictive modeling.
 
