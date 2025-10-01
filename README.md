@@ -58,11 +58,11 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 ## 📸 Visuals
 | <img src="assets/1.png" alt="Average Success Rate per Year" width="450"> | <img src="assets/5.png" alt="Average Success Rate per Year" width="400">  |
 |-----------------------------------|-----------------------------------|
-| **Average SpaceX Landing Success Rate per Year**  | ** SpaceX Launch & Landing Infrastructure in the U.S.** <br> East and West Coast Hubs with NASA's Johnson Space Center in Houston |
+| **Average SpaceX Landing Success Rate per Year**  | **SpaceX Launch & Landing Infrastructure in the U.S.** <br> East and West Coast Hubs with NASA's Johnson Space Center in Houston |
 
 | <img src="assets/3.png" alt="Average Success Rate per Year" width="400"> | <img src="assets/4.png" alt="Average Success Rate per Year" width="400">  |
 |-----------------------------------|-----------------------------------|
-| **Total Nasa Payload Mass** <br> Mission that include NASA payloads account for <br> ~17% of the payload mass SpaceX sends to orbit.|  **Average Payload Mass by Booster Version** <br> Each iteration of Falcon 9 significantly increased payload capacity | 
+| **Total Nasa Payload Mass** <br> Mission that include NASA payloads account for ~17% <br> of the payload mass SpaceX sends to orbit.|  **Average Payload Mass by Booster Version** <br> Each iteration of Falcon 9 significantly increased payload capacity | 
 
 | <img src="assets/2.png" alt="Average Success Rate per Year" width="400"> | <img src="assets/6.png" alt="Average Success Rate per Year" width="400">  |
 |-----------------------------------|-----------------------------------|
