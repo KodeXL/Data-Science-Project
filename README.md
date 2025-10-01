@@ -57,7 +57,7 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 ---
 
 ## 📸 Sample Visuals
-| <img src="assets/1.png" alt="Average Success Rate per Year" width="400"> | <img src="assets/2.png" alt="Average Success Rate per Year" width="400">  |
+| <img src="assets/1.png" alt="Average Success Rate per Year" width="400"> | <img src="assets/2.png" alt="Average Success Rate per Year" width="250">  |
 |-----------------------------------|-----------------------------------|
 | **Average SpaceX Landing Success Rate per Year**  | **SVM - Best Model**  <br> ROC-AUC is the strongest ~96%. False Postive rates can be reduced without sacrificing recall |
 
