@@ -38,7 +38,8 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 - Built multiple classification models:
   - **Logistic Regression**  
   - **Decision Tree**  
-  - **Support Vector Machine (SVM)**  
+  - **Support Vector Machine (SVM)**
+  - - **K-Nearest Neighbors (KNN)**  
 - Compared model performance using **ROC-AUC, accuracy, precision, recall, and F1-score**.  
 - **Best Model**: SVM, chosen for its strong ROC-AUC and flexibility in threshold tuning to balance false positives and false negatives.  
 
