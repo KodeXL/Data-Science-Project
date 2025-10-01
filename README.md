@@ -57,7 +57,8 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 ---
 
 ## 📸 Sample Visuals
-- (Insert images from your /images/ folder here, e.g. success rates by booster version, ROC curve of best model, dashboard screenshot.)
+![Average Success Rate per Year](assets/1.png)
+- Insert images from your /images/ folder here, e.g. success rates by booster version, ROC curve of best model, dashboard screenshot.)
 
 ---
 
