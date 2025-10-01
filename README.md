@@ -29,7 +29,7 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 - Launch success by payload mass and orbit.  
 - Landing outcomes across different launch sites.  
 - Booster version performance and reusability.
-- [Web Application](Python/spacex-dash-app.py)
+- ![Web Application](Python/spacex-dash-app.py)
 <img src="assets/7.png" alt="Average Success Rate per Year" width="650">  
 
 ---
@@ -51,8 +51,7 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 - **Languages**: Python, SQL  
 - **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Plotly, Dash, Scikit-learn  
 - **Database**: MySQL  
-- **Environment**: Jupyter Notebook  
-- **Version Control**: GitHub  
+- **Environment**: Jupyter Notebook
 
 ---
 
