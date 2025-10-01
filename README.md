@@ -29,8 +29,7 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 - Launch success by payload mass and orbit.  
 - Landing outcomes across different launch sites.  
 - Booster version performance and reusability.  
-
-🔗 *[Add GitHub Pages or local instructions if deployed]*  
+<img src="assets/7.png" alt="Average Success Rate per Year" width="450">  
 
 ---
 
