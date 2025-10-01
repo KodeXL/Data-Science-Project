@@ -30,6 +30,7 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 - Landing outcomes across different launch sites.  
 - Booster version performance and reusability.
 - ![Web Application](Python/spacex-dash-app.py)
+- VIDEO
 <img src="assets/7.png" alt="Average Success Rate per Year" width="650">  
 
 ---
@@ -39,7 +40,7 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
   - **Logistic Regression**  
   - **Decision Tree**  
   - **Support Vector Machine (SVM)**
-  - - **K-Nearest Neighbors (KNN)**  
+  - **K-Nearest Neighbors (KNN)**  
 - Compared model performance using **ROC-AUC, accuracy, precision, recall, and F1-score**.  
 - **Best Model**: SVM, chosen for its strong ROC-AUC and flexibility in threshold tuning to balance false positives and false negatives.  
 
