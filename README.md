@@ -29,8 +29,8 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 - Launch success by payload mass and orbit.  
 - Landing outcomes across different launch sites.  
 - Booster version performance and reusability.
-- [Web Application](Python/spacex-dash-app.py).
-<img src="assets/7.png" alt="Average Success Rate per Year" width="500">  
+- [Web Application](Python/spacex-dash-app.py)
+<img src="assets/7.png" alt="Average Success Rate per Year" width="650">  
 
 ---
 
@@ -56,7 +56,7 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 
 ---
 
-## 📸 Sample Visuals
+## 📸 Visuals
 | <img src="assets/1.png" alt="Average Success Rate per Year" width="450"> | <img src="assets/5.png" alt="Average Success Rate per Year" width="400">  |
 |-----------------------------------|-----------------------------------|
 | **Average SpaceX Landing Success Rate per Year**  |  |
@@ -67,8 +67,6 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 | <img src="assets/2.png" alt="Average Success Rate per Year" width="350"> | <img src="assets/6.png" alt="Average Success Rate per Year" width="400">  |
 |-----------------------------------|-----------------------------------|
 | **SVM - Best Model**  <br> ROC-AUC is the strongest ~96%. <br> False Postive rates can be reduced without sacrificing recall  |  |
-
-- dashboard screenshot.)
 
 ---
 
