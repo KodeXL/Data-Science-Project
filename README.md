@@ -63,10 +63,11 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 
 | <img src="assets/3.png" alt="Average Success Rate per Year" width="400"> | <img src="assets/4.png" alt="Average Success Rate per Year" width="400">  |
 |-----------------------------------|-----------------------------------|
- 
 
-<img src="assets/5.png" alt="Average Success Rate per Year" width="400"> 
-- Insert images from your /images/ folder here, e.g. success rates by booster version, ROC curve of best model, dashboard screenshot.)
+| <img src="assets/5.png" alt="Average Success Rate per Year" width="400"> | <img src="assets/6.png" alt="Average Success Rate per Year" width="400">  |
+|-----------------------------------|-----------------------------------|
+
+- dashboard screenshot.)
 
 ---
 
