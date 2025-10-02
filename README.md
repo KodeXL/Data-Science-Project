@@ -59,9 +59,9 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 
 ## 📂 Project Structure
 ```bash
-├── data/                 # Raw and processed datasets
-├── notebooks/            # Jupyter notebooks for EDA and modeling
-├── dashboard/            # Dash app files
+├── dataset/              # Raw and processed datasets
+├── python/               # Jupyter notebooks for EDA and modeling
+├── assest/               # Images
 ├── presentation/         # Charts, visuals, and results
 ├── README.md             # Project documentation
 
