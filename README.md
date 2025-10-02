@@ -68,7 +68,7 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 
 | <img src="assets/2.png" alt="Average Success Rate per Year" width="400"> | <img src="assets/6.png" alt="Average Success Rate per Year" width="400">  |
 |-----------------------------------|-----------------------------------|
-| **SVM - Best Model**  <br> ROC-AUC is the strongest ~96%. <br> False Postive rates can be reduced without sacrificing recall  | **The SVM Never Misses a successful landing(Recall = 100%).** <br> **It struggles with false positive. <br> 50% of the time, it predicts a landing when there was none.** |
+| **SVM - Best Model**  <br> ROC-AUC is the strongest ~96%. <br> False Postive rates can be reduced without sacrificing recall  | **SVM never misses a successful landing(Recall = 100%).** <br> **It struggles with false positive. <br> 50% of the time, it predicts a landing when there was none.** |
 
 ---
 
