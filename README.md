@@ -57,6 +57,29 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 
 ---
 
+## 📂 Project Structure
+```bash
+├── data/                 # Raw and processed datasets
+├── notebooks/            # Jupyter notebooks for EDA and modeling
+├── dashboard/            # Dash app files
+├── presentation/         # Charts, visuals, and results
+├── README.md             # Project documentation
+
+🚀 Results
+Booster version is the primary driver of landing success.
+Payload mass has a nonlinear relationship with success — heavier payloads reduce landing probability.
+Launch site also plays a role, with some sites showing higher success rates.
+The SVM model provided the best predictive performance.
+📌 Practical Impact: These insights align with SpaceX’s real-world improvements in reusability and cost reduction.
+
+🌟 Key Learnings
+Real-world data requires extensive cleaning and transformation.
+Interactive dashboards enhance data storytelling.
+Model evaluation beyond accuracy (ROC-AUC, F1-score) is critical for imbalanced datasets.
+Domain knowledge (rocket design, booster versions) matters when interpreting ML results.
+```
+---
+
 ## 📸 Visuals
 | <img src="assets/1.png" alt="Average Success Rate per Year" width="450"> | <img src="assets/5.png" alt="Average Success Rate per Year" width="400">  |
 |-----------------------------------|-----------------------------------|
@@ -83,28 +106,3 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 ## 👤 Author
 - Olamide Olayinka
 - 💼 [LinkedIn](https://www.linkedin.com/in/olamide-olayinka-a8222518/)
-
-
----
-
-## 📂 Project Structure
-```bash
-├── data/                 # Raw and processed datasets
-├── notebooks/            # Jupyter notebooks for EDA and modeling
-├── dashboard/            # Dash app files
-├── presentation/         # Charts, visuals, and results
-├── README.md             # Project documentation
-
-🚀 Results
-Booster version is the primary driver of landing success.
-Payload mass has a nonlinear relationship with success — heavier payloads reduce landing probability.
-Launch site also plays a role, with some sites showing higher success rates.
-The SVM model provided the best predictive performance.
-📌 Practical Impact: These insights align with SpaceX’s real-world improvements in reusability and cost reduction.
-
-🌟 Key Learnings
-Real-world data requires extensive cleaning and transformation.
-Interactive dashboards enhance data storytelling.
-Model evaluation beyond accuracy (ROC-AUC, F1-score) is critical for imbalanced datasets.
-Domain knowledge (rocket design, booster versions) matters when interpreting ML results.
-
