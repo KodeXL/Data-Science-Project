@@ -30,7 +30,7 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 - Landing outcomes across different launch sites.  
 - Booster version performance and reusability.
 - [Web Application](Python/spacex-dash-app.py)
-- VIDEO
+- [Video Demo](https://www.loom.com/share/f94396f62a7840cfa27423108a299303)
 <img src="assets/7.png" alt="Average Success Rate per Year" width="650">  
 
 ---
