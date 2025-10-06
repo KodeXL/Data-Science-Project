@@ -29,7 +29,7 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 - Launch success by payload mass and orbit.  
 - Landing outcomes across different launch sites.  
 - Booster version performance and reusability.
-- **[Web Application →](https://spacex-booster-landing-results.onrender.com/)**
+- [Web Application](https://spacex-booster-landing-results.onrender.com/)
 - [Python Script](Python/spacex-dash-app.py)
 - [Video Demo](https://www.loom.com/share/f94396f62a7840cfa27423108a299303)
 <img src="assets/7.png" alt="Average Success Rate per Year" width="650">  
