@@ -105,5 +105,7 @@ Domain knowledge (rocket design, booster versions) matters when interpreting ML 
 ---
 
 ## 👤 Author
-- Olamide Olayinka
+Olamide Olayinka
 - 💼 [LinkedIn](https://www.linkedin.com/in/olamide-olayinka-a8222518/)
+- 📊 [Portfolo](https://kodexl.github.io/olamideolayinka/)
+- 📧 [Email](mailto:olamideolayinka@cmail.carleton.ca )
