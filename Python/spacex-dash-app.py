@@ -23,6 +23,7 @@ color_discrete_map = {
 
 # Create a dash application
 app = dash.Dash(__name__)
+server = app.server
 
 # Create an app layout
 app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
