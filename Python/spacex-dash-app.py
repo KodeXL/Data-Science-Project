@@ -8,7 +8,7 @@ from dash.dependencies import Input, Output
 import plotly.express as px
 
 # Read the airline data into pandas dataframe
-spacex_df = pd.read_csv("https://raw.githubusercontent.com/KodeXL/Data-Science-Project/main/Data%20Sets/spacex_launch_dash.csv")
+spacex_df = pd.read_csv("spacex_launch_dash.csv")
 max_payload = spacex_df['Payload Mass (kg)'].max()
 min_payload = spacex_df['Payload Mass (kg)'].min()
 
@@ -19,7 +19,6 @@ color_discrete_map = {
     'B4': '#AB63FA',
     'B5': '#FFA15A'
 }
-
 
 # Create a dash application
 app = dash.Dash(__name__)
@@ -71,7 +70,7 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
               Input(component_id='site-dropdown', component_property='value'))
 def get_pie_chart(entered_site):    
     filtered_df = spacex_df[spacex_df['Launch Site'] == entered_site]
-    category_colors = {'Fail':'#EF553B', 'Success':'#636EFA'}
+    category_colors = {'Failure':'#EF553B', 'Success':'#636EFA'}
     if entered_site == 'ALL':
         ovr_success = spacex_df[spacex_df['class'] == 1] 
         ovr_success = ovr_success.groupby(['Launch Site'])['class'].count()
@@ -79,19 +78,19 @@ def get_pie_chart(entered_site):
         ovr_success['Success Rate']= np.round((ovr_success['class']/ovr_success['class'].sum())*100 , 1)
         fig = px.pie(ovr_success, values='Success Rate', 
         names='Launch Site', 
-        title='Total Success Lunches by Site')
+        title='Total Successful Booster Landings by Site')
         return fig
     else:
         filtered_df_class = filtered_df.groupby(['class'])['class'].count()
         filtered_df_class.index.name = "Outcome"
-        filtered_df_class = filtered_df_class.rename(index={0: "Fail", 1: "Success"})
+        filtered_df_class = filtered_df_class.rename(index={0: "Failure", 1: "Success"})
         filtered_df_class = filtered_df_class.to_frame().reset_index()
         fig = px.pie(filtered_df_class, values='class', 
             names='Outcome', 
             color = 'Outcome',
             color_discrete_map=category_colors,
-            category_orders={"Outcome": ["Success", "Fail"]},   
-            title=f'Total Success Lunches for site {entered_site}')
+            category_orders={"Outcome": ["Success", "Failure"]},   
+            title=f'Total Successful Booster Landings for {entered_site}')
         return fig
         # return the outcomes piechart for a selected site
 
@@ -109,7 +108,7 @@ def get_scatter_chart(entered_site, payload_range):
         fig = px.scatter(filtered_df, x='Payload Mass (kg)', y = 'Outcome', color='Booster Version Category',
                 category_orders={"Outcome": ["Success", "Failure"]},
                 color_discrete_map=color_discrete_map,
-                title='Correlation Between Payload and Success for All Sites ')
+                title='Booster Version Evolution in Payload vs Landing Success for All Sites ')
         return fig
     else:
         filtered_df = spacex_df[(spacex_df['Launch Site'] == entered_site) & 
@@ -119,7 +118,7 @@ def get_scatter_chart(entered_site, payload_range):
         fig = px.scatter(filtered_df, x='Payload Mass (kg)', y = 'Outcome', color='Booster Version Category',
                 category_orders={"Outcome": ["Success", "Failure"]},
                 color_discrete_map=color_discrete_map,
-                title= f'Correlation Between Payload and Success for {entered_site}')
+                title= f'Booster Version Evolution in Payload vs Landing Success - {entered_site}')
         return fig
 # Run the app
 if __name__ == '__main__':
