@@ -102,8 +102,6 @@ Domain knowledge (rocket design, booster versions) matters when interpreting ML 
 - IBM Data Science Capstone Project (inspiration for dataset structure)
 - Open-source Python community
 
----
-
 ## 👤 Author
 Olamide Olayinka
 - 💼 [LinkedIn](https://www.linkedin.com/in/olamide-olayinka-a8222518/)
