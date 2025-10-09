@@ -30,7 +30,7 @@ server = app.server
 
 # Create an app layout
 app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
-                                        style={'textAlign': 'center', 'color': '#503D36',
+                                        style={'textAlign': 'center', 'color': '#9C97C3',
                                                'font-size': 40}),
                                 # TASK 1: Add a dropdown list to enable Launch Site selection
                                 # The default select value is for ALL sites
@@ -45,6 +45,7 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
                                             value='ALL',
                                             placeholder="Select a Launch Site here",
                                             searchable=True
+                                            style={'color': 'black')
                                             ),
                                 html.Br(),
 
