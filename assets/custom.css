@@ -1,0 +1,42 @@
+/* custom.css */
+
+.dropdown-label { 
+    font-family:"Open Sans", verdana, arial, sans-serif;
+    text-align: center;
+    font-size: 2vw;
+    color: #9C97C3;
+    font-weight: normal;
+}
+
+.footer {
+    font-family: "Open Sans", verdana, arial, sans-serif;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 0.6vw;
+    color: #828282;
+    font-weight: normal;
+}
+
+.charts {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+}
+
+.pad {
+    font-size: 1vw;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#payload-slider .rc-slider-mark-text {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px
+}
