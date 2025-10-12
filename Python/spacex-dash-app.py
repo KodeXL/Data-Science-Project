@@ -4,7 +4,7 @@ from dash import dcc
 import dash_bootstrap_components as dbc
 from dash_bootstrap_templates import load_figure_template
 from dash.dependencies import Input, Output
-from graph_objects import get_pie_chart, get_scatter_chart
+from Python.graph_objects import get_pie_chart, get_scatter_chart
 
 load_figure_template('CYBORG')
 
