@@ -19,7 +19,7 @@ footer  = dbc.Container(
         )
 
 # Create a dash application
-app = dash.Dash(__name__, external_stylesheets= [dbc.themes.CYBORG, 'assets/custom.css'])
+app = dash.Dash(__name__, external_stylesheets= [dbc.themes.CYBORG])
 server = app.server
 
 # Create an app layout
