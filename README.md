@@ -32,7 +32,7 @@ An interactive dashboard was developed with **Plotly Dash** to visualize:
 - [Web Application](https://spacex-booster-landing-results.onrender.com/)
 - [Python Script](Python/spacex-dash-app.py)
 - [Video Demo](https://www.loom.com/share/f94396f62a7840cfa27423108a299303)
-<img src="assets/7.png" alt="Average Success Rate per Year" width="650">  
+<img src="Python/assets/7.png" alt="Average Success Rate per Year" width="650">  
 
 ---
 
@@ -82,15 +82,15 @@ Domain knowledge (rocket design, booster versions) matters when interpreting ML 
 ---
 
 ## 📸 Visuals
-| <img src="assets/1.png" alt="Average Success Rate per Year" width="450"> | <img src="assets/5.png" alt="Average Success Rate per Year" width="400">  |
+| <img src="Python/assets/1.png" alt="Average Success Rate per Year" width="450"> | <img src="Python/assets/5.png" alt="Average Success Rate per Year" width="400">  |
 |-----------------------------------|-----------------------------------|
 | **Average SpaceX Landing Success Rate per Year**  | **SpaceX Launch & Landing Infrastructure in the U.S.** <br> East and West Coast Hubs with NASA's Johnson Space Center in Houston |
 
-| <img src="assets/3.png" alt="Average Success Rate per Year" width="400"> | <img src="assets/4.png" alt="Average Success Rate per Year" width="400">  |
+| <img src="Python/assets/3.png" alt="Average Success Rate per Year" width="400"> | <img src="Python/assets/4.png" alt="Average Success Rate per Year" width="400">  |
 |-----------------------------------|-----------------------------------|
 | **Total NASA Payload Mass** <br> Mission that include NASA payloads account for ~17% of the<br>  payload mass SpaceX sends to orbit.|  **Average Payload Mass by Booster Version** <br> Each iteration of Falcon 9 significantly increased payload capacity | 
 
-| <img src="assets/2.png" alt="Average Success Rate per Year" width="400"> | <img src="assets/6.png" alt="Average Success Rate per Year" width="400">  |
+| <img src="Python/assets/2.png" alt="Average Success Rate per Year" width="400"> | <img src="Python/assets/6.png" alt="Average Success Rate per Year" width="400">  |
 |-----------------------------------|-----------------------------------|
 | **SVM - Best Model**  <br> ROC-AUC is the strongest ~96%. <br> False Postive rates can be reduced without sacrificing recall  | **SVM never misses a successful landing(Recall = 100%).** <br> **It struggles with false positive. <br> 50% of the time, it predicts a landing when there was none.** |
 
