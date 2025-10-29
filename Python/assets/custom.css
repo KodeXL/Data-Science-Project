@@ -40,3 +40,35 @@
   padding-top: 5px;
   padding-bottom: 5px
 }
+
+@media (max-width: 768px) {
+  .charts {
+    margin: 5px auto !important;
+    padding: 0 !important;
+    width: 95vw !important;
+  }
+
+  .pad {
+    margin: 5px auto !important;
+    font-size: 3.5vw !important;
+  }
+
+  .dropdown-label {
+    font-size: 4vw !important;
+  }
+
+  .footer {
+    font-size: 2.5vw !important;
+  }
+
+  #payload-slider .rc-slider-mark-text {
+    font-size: 3vw !important;
+  }
+
+  /* Prevent chart overflow */
+  .js-plotly-plot {
+    margin: 0 auto !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
