@@ -41,7 +41,7 @@
   padding-bottom: 5px
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .charts {
     margin: 5px auto !important;
     padding: 0 !important;
