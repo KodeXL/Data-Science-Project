@@ -27,7 +27,7 @@ def get_pie_chart(entered_site):
             template = 'plotly_dark',                     
             names='Launch Site', 
             title='Total Successful Booster Landings by Site')
-        fig.update_layout(font=dict(size=18))
+        fig.update_layout(font=dict(size=18), , title= {'x': 0.47, 'xanchor': 'center'})
 
         return fig
     else:
@@ -43,7 +43,7 @@ def get_pie_chart(entered_site):
             color_discrete_map=category_colors,
             category_orders={"Outcome": ["Success", "Failure"]},   
             title=f'Total Successful Booster Landings for {entered_site}')
-        fig.update_layout(font=dict(size=18))
+        fig.update_layout(font=dict(size=18), title= {'x': 0.47, 'xanchor': 'center'})
         return fig
         # return the outcomes piechart for a selected site
 
@@ -60,7 +60,7 @@ def get_scatter_chart(entered_site, payload_range):
                 color_discrete_map=color_discrete_map,
                 title='Booster Version Evolution<br>Payload vs Landing Success for All Sites'
         )
-        fig.update_layout(font=dict(size=18))
+        fig.update_layout(font=dict(size=18), title= {'x': 0.47, 'xanchor': 'center'})
         return fig
     else:
         filtered_df = spacex_df.loc[(spacex_df['Launch Site'] == entered_site) & 
@@ -72,5 +72,5 @@ def get_scatter_chart(entered_site, payload_range):
                 category_orders={"Outcome": ["Success", "Failure"]},
                 color_discrete_map=color_discrete_map,
                 title= f'Booster Version Evolution<br>Payload vs Landing Success - {entered_site}')
-        fig.update_layout(font=dict(size=18), title={'xanchor': 'center'})
+        fig.update_layout(font=dict(size=18), title= {'x': 0.47, 'xanchor': 'center'})
         return fig
