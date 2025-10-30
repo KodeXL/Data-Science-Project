@@ -67,7 +67,8 @@ def get_scatter_chart(entered_site, payload_range):
                 title='Booster Version Evolution<br>Payload vs Landing Success for All Sites'
         )
         fig.update_layout(
-            margin=dict(t=120),
+            height=600,
+            margin=dict(t=150),
             font=dict(size=18), 
             title= {'x': 0.47, 'xanchor': 'center'})
         return fig
@@ -82,7 +83,8 @@ def get_scatter_chart(entered_site, payload_range):
                 color_discrete_map=color_discrete_map,
                 title= f'Booster Version Evolution<br>Payload vs Landing Success - {entered_site}')
         fig.update_layout(
-            margin=dict(t=120),
+            height=600,
+            margin=dict(t=150),
             font=dict(size=18), 
             title= {'x': 0.47, 'xanchor': 'center'})
         return fig
