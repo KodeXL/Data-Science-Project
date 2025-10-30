@@ -45,7 +45,9 @@ app.layout = html.Div(
         ),
         # Add pie chart to show the total successful launches count for all sites
         # If a specific launch site was selected, show the Success vs. Failed counts for the site
-        html.Div(dcc.Graph(id='success-pie-chart', className = 'charts')),
+        dbc.Row([
+            dbc.Col(dcc.Graph(id='success-pie-chart', className='charts'))
+        ]),
 
         html.P("Payload range (Kg):", className = 'pad'),
         # Add a slider to select payload range
@@ -59,7 +61,9 @@ app.layout = html.Div(
         ),
 
         # Adding scatter chart to show the correlation between payload and launch success
-        html.Div(dcc.Graph(id='success-payload-scatter-chart', className = 'charts')),
+        dbc.Row([
+            dbc.Col(dcc.Graph(id='success-payload-scatter-chart', className='charts'))
+        ]),
 
         footer
     ]
