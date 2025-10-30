@@ -28,6 +28,7 @@ def get_pie_chart(entered_site):
             names='Launch Site', 
             title='Total Successful Booster Landings by Site')
         fig.update_layout(
+            height = 400,
             margin=dict(t=120),
             font=dict(size=18),
             title= {'x': 0.47, 'xanchor': 'center'})
@@ -47,6 +48,7 @@ def get_pie_chart(entered_site):
             category_orders={"Outcome": ["Success", "Failure"]},   
             title=f'Total Successful Booster Landings for {entered_site}')
         fig.update_layout(
+            height = 400,
             margin=dict(t=120),
             font=dict(size=18), 
             title= {'x': 0.47, 'xanchor': 'center'})
