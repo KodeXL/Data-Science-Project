@@ -47,13 +47,16 @@
     padding: 0 !important;
     width: 95vw !important;
   }
-
+  .dash-graph .gtitle {
+    font-size: 3.5vw !important;
+    font-weight: bold !important;
+  } 
   .pad {
     margin: 5px auto !important;
     font-size: 3.5vw !important;
   }
 
-  .dropdown-label {
+  .title {
     font-size: 4vw !important;
   }
 
