@@ -35,6 +35,11 @@
 
 }
 
+.dash-graph .gtitle {
+    font-size: 3.5vw !important;
+    font-weight: bold !important;
+} 
+
 #payload-slider .rc-slider-mark-text {
   font-size: 18px;
   padding-top: 5px;
