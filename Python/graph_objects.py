@@ -58,7 +58,7 @@ def get_scatter_chart(entered_site, payload_range):
                 template = 'plotly_dark', 
                 category_orders={"Outcome": ["Success", "Failure"]},
                 color_discrete_map=color_discrete_map,
-                #title='Booster Version Evolution in Payload vs Landing Success for All Sites '
+                title='Booster Version Evolution\nPayload vs Landing Success for All Sites '
         )
         fig.update_layout(font=dict(size=18))
         return fig
