@@ -19,13 +19,18 @@ footer  = dbc.Container(
         )
 
 # Create a dash application
-app = dash.Dash(__name__, external_stylesheets= [dbc.themes.DARKLY])
+app = dash.Dash(__name__, 
+                external_stylesheets= [dbc.themes.DARKLY]
+                meta_tags=[{
+                    'name': 'viewport',
+                    'content': 'width=device-width, initial-scale=0.69, maximum-scale=1.0, user-scalable=no'
+                }]    
+)
 server = app.server
 
 # Create an app layout
-app.layout = html.Div(
-    children=[
-        html.H1('SpaceX Launch Records Dashboard', className = 'title',
+app.layout = dbc.Container([
+        html.H1('SpaceX Launch Records Dashboard', className = 'label',
         ),
         # Add a dropdown list to enable Launch Site selection
         # The default select value is for ALL sites
@@ -66,7 +71,7 @@ app.layout = html.Div(
         ]),
 
         footer
-    ]
+    ], fluid=True, 
 )
 
 # Callback function for `site-dropdown` and `payload-slider` as input, `success-pie-chart` as output
