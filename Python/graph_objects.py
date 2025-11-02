@@ -26,13 +26,19 @@ def get_pie_chart(entered_site):
         fig = px.pie(ovr_success, values='Success Rate',
             template = 'plotly_dark',                     
             names='Launch Site', 
-            title='Total Successful Booster Landings by Site')
+            title='Total Successful Booster Landings by Site',
+            custom_data=[ovr_success['class']]
+        )
         fig.update_layout(
-            height = 400,
             margin=dict(t=120),
-            font=dict(size=18),
+            font=dict(size=18), 
             title= {'x': 0.47, 'xanchor': 'center'})
-
+        fig.update_traces(
+           hovertemplate=
+                "Launch Site: %{label}<br>" +
+                "Success Landings: %{customdata[0]}<br>" +
+                "Percentage: %{percent}<extra></extra>"
+        )
         return fig
     else:
         filtered_df = spacex_df.loc[spacex_df['Launch Site'] == entered_site].copy()
@@ -46,12 +52,17 @@ def get_pie_chart(entered_site):
             color = 'Outcome',
             color_discrete_map=category_colors,
             category_orders={"Outcome": ["Success", "Failure"]},   
-            title=f'Total Successful Booster Landings for {entered_site}')
+            title=f'Total Successful Booster Landings <br> {entered_site}',
+            custom_data=[filtered_df_class['class']]
+        )
         fig.update_layout(
-            height = 400,
             margin=dict(t=120),
             font=dict(size=18), 
             title= {'x': 0.47, 'xanchor': 'center'})
+        fig.update_traces(
+            hovertemplate=
+                "Outcome: %{customdata[0]}<extra></extra>"
+        )
         return fig
         # return the outcomes piechart for a selected site
 
@@ -66,13 +77,24 @@ def get_scatter_chart(entered_site, payload_range):
                 template = 'plotly_dark', 
                 category_orders={"Outcome": ["Success", "Failure"]},
                 color_discrete_map=color_discrete_map,
-                title='Booster Version Evolution<br>Payload vs Landing Success for All Sites'
-        )
+                labels={'Booster Version Category': 'Version'},
+                title='Booster Version Evolution<br>Payload vs Landing Success for All Sites ')
         fig.update_layout(
+            legend_title_text='',
             height=600,
-            margin=dict(t=150),
+            margin=dict(t=150, r=80, l = 20),
             font=dict(size=18), 
-            title= {'x': 0.47, 'xanchor': 'center'})
+            title= {'x': 0.47, 
+                'xanchor': 'center',
+                #'pad': {'b': 500}, 
+                'y': 0.9
+            }
+        )
+        fig.update_traces(hovertemplate=
+                            "Booster Version Category: %{fullData.name}<br>" +
+                            "Payload Mass (kg): %{x}<br>" +
+                            "Outcome: %{y}<extra></extra>"
+        )
         return fig
     else:
         filtered_df = spacex_df.loc[(spacex_df['Launch Site'] == entered_site) & 
@@ -83,10 +105,21 @@ def get_scatter_chart(entered_site, payload_range):
                 template = 'plotly_dark', 
                 category_orders={"Outcome": ["Success", "Failure"]},
                 color_discrete_map=color_discrete_map,
+                labels={'Booster Version Category': 'Version'},
                 title= f'Booster Version Evolution<br>Payload vs Landing Success - {entered_site}')
         fig.update_layout(
+            legend_title_text='',
             height=600,
-            margin=dict(t=150),
+            margin=dict(t=150, r=80, l = 20 ),
             font=dict(size=18), 
-            title= {'x': 0.47, 'xanchor': 'center'})
+            title= {'x': 0.47, 
+                'xanchor': 'center', 
+                'y': 0.9
+            }
+        )
+        fig.update_traces(hovertemplate=
+                            "Booster Version: %{fullData.name}<br>" +
+                            "Payload Mass (kg): %{x}<br>" +
+                            "Outcome: %{y}<extra></extra>"
+        )
         return fig
